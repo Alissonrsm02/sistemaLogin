@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Validando</title>
+</head>
+<body>
+ <div class="main-login">
+        <div class="left-login">
+         <h1>Faça Login<br>E entre para o nosso time</h1>
+         <img src="astro.svg" class="left-login-img" alt="Astronauta Animação">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                 <h1>Login</h1>
+                 <form>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" placeholder="Usuario" id="login">
+                </div>
+                <div class="textfield">
+                    <label for="usuario">Senha</label>
+                    <input type="password" placeholder="Senha" id="senha">
+                 </div>
+                 <input type="submit"  class="btn-login" placeholder="Login" onclick="logar()">
+                </form>
+            </div>
+       </div>
+ </div>
+ </div>
+    <script>
+
+        function logar(){
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "alisson" && senha == "1234"){
+                alert('Sucesso');
+            }else if(login == "daniel" && senha == "1234"){
+                alert('Sucesso');
+            }else if(login == "joel" && senha == "1234"){
+                alert('Sucesso');
+            }
+            else{
+                alert('Usuario ou senha incorretos')
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>
