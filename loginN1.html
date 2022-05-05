@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Login ADM</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Login Validando</title>
 </head>
 <body>
  <div class="main-login">
         <div class="left-login">
-         <h1>Bem vindo(a) a<br>Pagina da administração</h1>
-         <img src="adm.svg" class="left-login-img" alt="Astronauta Animação">
+         <h1>Faça Login<br>E entre para o nosso time</h1>
+         <img src="astro.svg" class="left-login-img" alt="Astronauta Animação">
         </div>
         <div class="right-login">
             <div class="card-login">
-                 <h1>Login Administrador</h1>
+                 <h1>Login</h1>
                  <form>
                 <div class="textfield">
                     <label for="usuario">Usuário</label>
@@ -25,7 +25,8 @@
                     <label for="usuario">Senha</label>
                     <input type="password" placeholder="Senha" id="senha">
                  </div>
-                 <input type="submit"  class="btn-login" placeholder="Login" onclick="logar(); return false ">
+                 <button type="submit"  class="btn-login" placeholder="Login" onclick="logar(); return false">Login</BUtton>
+                 <button class="btn-login-C";>Cadastrar</button>
                 </form>
             </div>
        </div>
@@ -37,15 +38,15 @@
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
 
-            if(login == "mae" && senha == "1234"){
-                alert('Seja bem vinda Carla');
-                location.href = "telaADM.html";
-            }else if(login == "pai" && senha == "1234"){
-                alert('Seja bem vindo Alex');
-                location.href = "telaADM.html";
-            }else if(login == "fernanda" && senha == "1234"){
-                alert('Seja bem vinda Fernanda');
-                location.href = "telaADM.html";
+            if(login == "alisson" && senha == "1234"){
+                alert('Sucesso');
+                location.href = "telaN1.html";
+            }else if(login == "daniel" && senha == "1234"){
+                alert('Sucesso');
+                location.href = "telaN1.html";
+            }else if(login == "joel" && senha == "1234"){
+                alert('Sucesso');
+                location.href = "telaN1.html";
             }
             else{
                 alert('Usuario ou senha incorretos')
